@@ -14,7 +14,7 @@
 
 <!--Contenedor primario hero panel-->
 <div class="container-fluid vw-100 vh-100 law">
-    <nav class="navbar navbar-expand-lg navbar-dark align fixed-top" id="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark align fixed-top dummy" id="menu">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,7 +60,7 @@
   
 </div>
 
-<div class="container-fluid service">
+<div class="container-fluid service" id="services">
     <div class="container pt-5">
         <div class="container mt-5">
             <h2 class="text-center">Servicios</h2>
@@ -92,24 +92,38 @@
         </div>
     </div>
 </div>
-<div class="container-fluid p-5 map">
+<div class="container-fluid p-5 map" id="contact">
     <div class="contact-in">
         <div class="contact-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d644.3626234417569!2d-87.20211420497691!3d14.097596291899702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa30a9f757dcd%3A0xdf7dfd4cca59b8d2!2sCursillos%20de%20Cristiandad%2C%20Tegucigalpa!5e1!3m2!1ses!2shn!4v1614972622923!5m2!1ses!2shn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="contact-form">
             <h1>Contáctanos</h1>
-            <form>
+     <!--       <form>
                 <input type="text" placeholder="Nombre Completo" class="contact-form-txt"/>
                 <input type="text" placeholder="Correo Electrónico" class="contact-form-txt" />
                 <textarea name="" placeholder="Escribe aquí tu consulta" class="contact-form-textarea"></textarea>
                 <input type="submit" name="Enviar"/>
+            </form> -->
+            <form method="POST" action="https://formsubmit.co/0e3c674648428db2b0e16e52937fa150" enctype="multipart/form-data">
+                <input type="email" name="email" placeholder="Tu correo electrónico" class="contact-form-txt">
+                <input type="hidden" name="_subject" value="Nueva consulta">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <textarea name="message" placeholder="Escribe aquí tu consulta" class="contact-form-textarea"></textarea>
+                <button type="submit" class="btn btn-info">Enviar consulta</button>
             </form>
         </div>
         <div>
             <br>
             <p><strong>Horario de atención: </strong> Lunes a viernes 8:00 am - 3:00 pm</p>
         </div>
+    </div>
+</div>
+<div class="container cita p-5" id="appointments">
+    <div class="content justify-content-center align-items-center d-flex flex-column">
+        <h1 class="display-4">Agenda tu cita</h1>
+        <button type="button" class="btn btn-dark mt-3" onclick="location.href ='citas.html'">Ir a agendar la cita</button>
     </div>
 </div>
 <footer>
@@ -132,8 +146,10 @@
         $(window).scroll(function(){
             if($("#menu").offset().top>200){
                 $("#menu").addClass("bg-dark");
+                $("#menu").removeClass("dummy");
             }else{
                 $("#menu").removeClass("bg-dark");
+                $("#menu").addClass("dummy");
             }
         });
     </script>
@@ -141,8 +157,17 @@
 
 </html>
 
-
-
+<!--
+<div class="container">
+    <form method="POST" action="https://formsubmit.co/0e3c674648428db2b0e16e52937fa150" enctype="multipart/form-data">
+        <input type="email" name="email" placeholder="Tu correo electrónico">
+        <input type="hidden" name="_subject" value="Nueva consulta">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <textarea name="message" placeholder="Escribe aquí tu consulta"></textarea>
+        <button type="submit">Enviar consulta</button>
+    </form>
+</div> -->
 <!--
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a href="#"" class="navbar-brand"><img class="logo" src="./images/UNICAH_logo.png" alt="Logo UNICAH"></a>
