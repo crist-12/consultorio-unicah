@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorio Jurídico UNICAH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/967af241c0.js" crossorigin="anonymous"></script>
+
     <link href="css/styles.css" rel="stylesheet">
-    <script src="./js/index.js"></script>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
         </button>
         <a href="#"" class="navbar-brand"><img class="logo" src="./images/UNICAH_logo.png" alt="Logo UNICAH"></a>
         <span class="nav-text text-white">Consultorio Jurídico</span>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse justify-content-end spacing" id="navbarTogglerDemo01">
           <ul class="navbar-nav">
             <li class="nav-item item-margin">
                 <a href="#services" class="nav-link">Servicios</a>
@@ -38,9 +39,9 @@
         <div class="row row-cols-1 w-100 text-superior">
           <div class="col text-center">
               <img src="images/UNICAH_logo.png" alt="Logo de la UNICAH"/>
-              <h1 class="display-1 text-white">Consultoría jurídica gratuita</h1>
+              <h1 class="display-1 text-white">Consultorio jurídico gratuita</h1>
               <h2 class="text-white">Universidad Católica de Honduras</h2>
-              <h3 class="text-white">Nuestra Señora Reina de la Paz</h2>
+              <h3 class="text-white">"Nuestra Señora Reina de la Paz"</h2>
               <h3 class="text-white">Campus Sagrado Corazón de Jesús</h3>
           </div>
         </div>
@@ -56,7 +57,7 @@
         <hr class="barrita2">
     </div>
     <div class="container p-5">
-        <p class="text-justify text" >La Universidad Católica de Honduras, en el año dos mil tres (2003) decidió hacer una actividad humanitaria, velando por el bienestar y derechos de aquellos que no tienen la posibilidad en un sentido legal de defenderse por sus propios medios, por ende nace el Consultorio Jurídico Gratuito, con el fin de poder proveer servicios legales a personas de  escasos recursos, brindándoles la facultad de poder resolver cuestiones legales de su interés, servicio que sería brindado por los procuradores de dicho Consultorio sin ningún costo económico. En virtud de lo mismo, es que surge una misión social, que hasta la actualidad ha   seguido brindando servicios legales, ayudando a la sociedad a resolver sus diferentes conflictos.</p>
+        <p class="text-justify text">La Universidad Católica de Honduras en el año dos mil tres (2003) decidió extender su labor social, velando por el bienestar y derechos de aquellos que no tienen la posibilidad, en un sentido legal, de defenderse por sus propios medios ante los tribunales del país. Por tal razón, nace el <span>Consultorio Jurídico Gratuito</span>, con el fin de poder brindar servicios legales a personas de escasos recursos, ofreciendoles la oportunidad de resolver asuntos legales de su interés, servicio que sería brindado por los procuradores de dicho Consultorio sin ningún costo económico.</p>
     </div>
 </div>
 
@@ -75,11 +76,11 @@
                     <li>
                         <ul>
                             <p>Asesoría y representación legal en materia de:</p>
-                            <li>Derecho de familia (No llevamos divorcios)</li>
+                            <li>Derecho de familia (Excepto divorcios)</li>
                             <li>Derecho Civil</li>
                             <li>Derecho Penal (Asesoría y estudio de expedientes)</li>
                             <li>Asuntos de violencia doméstica (en caso de ser víctima)</li>
-                            <li>Niñez y Adolescencia</li>
+                            <li>Asuntos relacionados a la niñez y adolescencia</li>
                             <li>Derecho Laboral</li>
                             <li>Derecho Administrativo</li>
                             <li>Inquilinato</li>
@@ -89,7 +90,7 @@
                     <li>
                         <ul>
                             <p>Servicios Integrales</p>
-                            <li>Centro de Conciliación y Arbitraje</li>
+                            <li>Conciliación</li>
                         </ull>
                     </li>
             </ul>
@@ -103,24 +104,17 @@
         </div>
         <div class="contact-form">
             <h1>Contáctanos</h1>
-     <!--       <form>
-                <input type="text" placeholder="Nombre Completo" class="contact-form-txt"/>
-                <input type="text" placeholder="Correo Electrónico" class="contact-form-txt" />
-                <textarea name="" placeholder="Escribe aquí tu consulta" class="contact-form-textarea"></textarea>
-                <input type="submit" name="Enviar"/>
-            </form> -->
-            <form method="POST" action="https://formsubmit.co/f16e404f31e239aee9931a14ee43492e" enctype="multipart/form-data">
-                <input type="email" name="email" placeholder="Tu correo electrónico" class="contact-form-txt">
-                <input type="hidden" name="_subject" value="Nueva consulta">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <textarea name="message" placeholder="Escribe aquí tu consulta" class="contact-form-textarea"></textarea>
-                <button type="submit" class="btn btn-info">Enviar consulta</button>
+            <form>
+                <input  id="name" class="contact-form-txt" placeholder="Nombre completo"/>
+                <input id="reply_to" class="contact-form-txt" placeholder="Tu correo electrónico"/>
+                <textarea id="message" placeholder="Escribe aquí tu consulta" class="contact-form-textarea"></textarea>
+                <button id="send" class="btn btn-info">Enviar consulta</button>
             </form>
         </div>
         <div>
             <br>
             <p><strong>Horario de atención: </strong> Lunes a viernes 8:00 am - 3:00 pm</p>
+            <p><strong>Teléfono: </strong><a href="tel:+50495000491">9500-0491</a></p>
         </div>
     </div>
 </div>
@@ -136,13 +130,20 @@
         <p>Nuestra Señora Reina de la Paz</p>
         <ul class="socials">
             <li><a href="https://www.unicah.edu/"><i class="fas fa-globe-americas"></i></a></li>
-            <li><a href="https://www.facebook.com/UNICAHONDURAS/"><i class="fa fa-facebook"></i></a></li>    
+            <li><a href="https://www.facebook.com/profile.php?id=100073344556117"><i class="fa fa-facebook"></i></a></li>    
         </ul>
     </div>
     <div class="footer-bottom">
         <p>Todos los derechos reservados &copy;2021 <span>UNICAH</span></p>
     </div>
 </footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+    emailjs.init("user_308t47OYbYXkSKlPzvLIY");
+    })();
+</script>
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -160,57 +161,3 @@
 </body>
 
 </html>
-
-<!--
-<div class="container">
-    <form method="POST" action="https://formsubmit.co/0e3c674648428db2b0e16e52937fa150" enctype="multipart/form-data">
-        <input type="email" name="email" placeholder="Tu correo electrónico">
-        <input type="hidden" name="_subject" value="Nueva consulta">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <textarea name="message" placeholder="Escribe aquí tu consulta"></textarea>
-        <button type="submit">Enviar consulta</button>
-    </form>
-</div> -->
-<!--
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="#"" class="navbar-brand"><img class="logo" src="./images/UNICAH_logo.png" alt="Logo UNICAH"></a>
-    <span class="nav-text text-white">Consultorio Jurídico</span>
-    <ul class="navbar-nav justify-content-end">
-        <li class="nav-item">
-            <a href="#" class="nav-link">Item 1</a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">Item 1</a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">Item 1</a>
-        </li>
-    </ul>
-</nav>
-
-
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="collapse_target">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapse_target">
-        <a href="#"" class="navbar-brand"><img class="logo" src="./images/UNICAH_logo.png" alt="Logo UNICAH"></a>
-        <span class="nav-text text-white">Consultorio Jurídico</span>
-        <ul class="navbar-nav justify-content-end">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Item 1</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Item 1</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Item 1</a>
-            </li>
-        </ul>
-    </div>
-    </nav>
-
-
-
--->

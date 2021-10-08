@@ -10,6 +10,9 @@
     justify-content: flex-start;
 }
 
+.spacing {
+    padding: 10px;
+}
 
 .logo{
     width: 40px;
@@ -81,7 +84,7 @@ body{
 
 .contact-in
 {
-	width: 80%;
+	width: 100%;
 	height: auto;
 	margin: auto;
 	display: flex;
@@ -89,7 +92,6 @@ body{
 	padding: 10px;
 	border-radius: 10px;
 	background: #fff;
-
 }
 
 .contact-map
@@ -126,6 +128,7 @@ body{
 	outline: none;
 	margin-bottom: 20px;
 	padding: 15px;
+    font-size: 14px;
 }
 .contact-form-txt::placeholder
 {
@@ -141,7 +144,8 @@ body{
 	outline: none;
 	margin-bottom: 20px;
 	padding: 15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 .contact-form-textarea::placeholder
 {
